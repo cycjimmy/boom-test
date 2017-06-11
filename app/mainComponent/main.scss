@@ -1,0 +1,144 @@
+@import '../theme/variables';
+
+.wrap {
+  width: 10rem;
+  margin: 0 auto;
+  padding: 0 .15rem;
+  display: flex;
+}
+
+.leftWrap {
+  display: flex;
+  flex-direction: column;
+  padding-left: .15rem;
+}
+
+.tagWrap {
+  display: flex;
+  padding: .02rem;
+  color: #3e7ac2;
+  font-size: $fontS;
+
+  > a {
+    $tagHeight: .3rem;
+
+    display: block;
+    height: $tagHeight;
+    padding: 0 .1rem;
+    margin-right: .06rem;
+
+    background-color: #eef4fa;
+    border-radius: $tagHeight / 2;
+    line-height: $tagHeight;
+  }
+}
+
+.title {
+  margin: .15rem 0 .06rem;
+  font-size: 22px;
+}
+
+.content {
+
+}
+
+.featuresWrap {
+  display: flex;
+  align-items: center;
+  margin: .06rem 0;
+  height: .2rem;
+
+  font-size: $fontS;
+  color: $fontGray;
+
+  > a {
+    display: flex;
+    align-items: center;
+    height: .2rem;
+    margin-right: .12rem;
+
+    > svg {
+      margin-right: .04rem;
+      fill: $fontGray;
+    }
+  }
+}
+
+.rightWrap {
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoShow {
+  margin: 0 0 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: stretch;
+}
+
+.infoShowLine {
+  width: .01rem;
+  background-color: #f0f2f7;
+}
+
+.infoShowItem {
+
+}
+
+.infoTitle,
+.infoNum {
+  display: block;
+  width: 1rem;
+}
+
+.infoTitle {
+  font-size: $fontS;
+  color: $fontGray;
+}
+
+.infoNum {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btnWrap {
+  display: flex;
+  margin: auto 0 0;
+}
+
+.follow,
+.write {
+  display: flex;
+  align-items: center;
+  height: $btnHeight;
+  padding: 0 .2rem;
+  margin: 0 .08rem;
+
+  border: .01rem solid $blue;
+  border-radius: $radius;
+  font-size: $fontS;
+}
+
+.follow {
+  background-color: $blue;
+  color: $white;
+
+  &:hover {
+    background-color: darken($blue, 5%);
+  }
+}
+
+.write {
+  color: $blue;
+
+  &:hover {
+    background-color: #f7f8fa;
+  }
+
+  > svg {
+    margin-right: .04rem;
+    fill: $blue;
+  }
+}

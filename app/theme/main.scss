@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'utilities';
+/*---------------------------
+ * reset style
+ *---------------------------*/
+@import "reset";
+
+html {
+  font-size: 100px;
+  line-height: 1.4;
+}
+
+body {
+  font-size: $fontM;
+  font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: $fontColor;
+  background-color: $bgc;
+}
+
+/*---------------------------
+ * Main Frame
+ *---------------------------*/
+header {
+  position: relative;
+  z-index: 10;
+  height: .52rem;
+  background-color: $white;
+  border-bottom:.01rem solid rgba(30,35,42,.06);
+  box-shadow:0 .01rem .03rem 0 rgba(0,34,77,.05);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  min-height: 1rem;
+  padding: .16rem 0;
+
+
+  background-color: $white;
+}
+
+
+
+
+
