@@ -1,0 +1,21 @@
+<header class="head">
+  <h1 class="title"> {{data.name}} </h1>
+  <div class="introduce"> {{data.introduce}}</div>
+</header>
+
+<hr/>
+
+<!--问卷表单部分-->
+<main class="main">
+  <form #myFrom="ngForm" (ngSubmit)="doSubmit(myFrom.value)">
+    <ul>
+      <li class="questions-list" *ngFor="let question of data.questions;let i = index;">
+        <app-my-question [question]="question" [i]="i" [answerData]="answerData[i]"></app-my-question>
+      </li>
+    </ul>
+    <button class="submit" type="submit" [disabled]="!myFrom.valid">提交</button>
+  </form>
+</main>
+
+
+

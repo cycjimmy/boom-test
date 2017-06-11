@@ -1,0 +1,11 @@
+<label [for]="inputName">{{inputName}} {{question.question}}</label>
+<!-- 有答案 => 转变为text-question -->
+<input *ngIf="question.hasAnswers" class="text-input" type="text" [name]="inputName" required/>
+<div *ngIf="question.hasAnswers && answerData" class="answer">答案: {{answerData.answer}}</div>
+
+<!-- 没有答案 => 进行嵌套 -->
+<ul *ngIf="!question.hasAnswers">
+  <li class="questions-list" *ngFor="let question of question.answers;let i = index;">
+    <app-my-question [question]="question" [i]="i" [inputName]="inputName" [answerData]="answerData?.answers[i]"></app-my-question>
+  </li>
+</ul>

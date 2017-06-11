@@ -1,0 +1,14 @@
+<div class="question" [ngSwitch]="question.type">
+  <div class="question" *ngSwitchCase="'text'">
+    <app-text-question [question]="question" [i]="i" [inputName]="getInputName()" [answerData]="answerData"></app-text-question>
+  </div>
+  <div class="question" *ngSwitchCase="'singleSelection'">
+    <app-single-selection-question [question]="question" [i]="i" [inputName]="getInputName()" [answerData]="answerData"></app-single-selection-question>
+  </div>
+  <div class="question" *ngSwitchCase="'MultipleSelection'">
+    <app-multiple-selection-question [question]="question" [i]="i" [inputName]="getInputName()" [answerData]="answerData"></app-multiple-selection-question>
+  </div>
+  <div class="question" *ngSwitchCase="'custom'">
+    <app-custom-question [question]="question" [i]="i" [inputName]="getInputName()" [answerData]="answerData"></app-custom-question>
+  </div>
+</div>

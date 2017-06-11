@@ -1,0 +1,6 @@
+<label [for]="inputName">{{inputName}} {{question.question}}</label>
+<div *ngFor="let answer of question.answers;let i=index">
+  <input [name]="inputName" type="radio" [value]="i" required />{{i | transformABCD}}. {{answer.answer}}
+</div>
+<div *ngIf="answerData" class="answer">答案: {{answerData?.answer | transformABCD}}</div>
+

@@ -1,9 +1,28 @@
-# boom前端测试题
+# BoomTest
 
-## 前端界面基础(选做一题,请务必保证页面的美观)
-### 1.布局部分:[请实现图片中的布局(此题主要考察页面还原度,实现主体模块就可以，重复部分无需实现)](http://code.iboom.tv/1.png)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
-### 2.动画特效部分 ：实现里面图片的效果http://wanna.tech（根据鼠标的位置的变化而变化，越炫越好）
+## Development server
 
-## js框架部分(angular,vue,react)
-### 实现一个问卷页面，具体要求及数据说明在资料中有说明试题资料
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

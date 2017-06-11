@@ -1,0 +1,3 @@
+<label [for]="inputName">{{inputName}} {{question.question}}</label>
+<input class="text-input" type="text" [name]="inputName" required />
+<div *ngIf="answerData" class="answer">答案: {{answerData.answer}}</div>
